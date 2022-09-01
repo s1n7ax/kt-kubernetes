@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: ku
+  labels:
+    app: customer
+    type: frontend
+spec:
+  template:
+    metadata:
+      name: ku
+      labels:
+        app: customer
+        type: frontend
+    spec:
+      containers:
+      - name: ku
+        image: s1n7ax/ku:1.0 
+  replicas: 4
+  selector:
+    matchLabels:
+      app: customer
+      type: frontend
