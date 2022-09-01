@@ -2,6 +2,7 @@
 
 * Containerizing (Docker)
 * Pods
+* Service
 * ReplicaSet
 * Deployment
 
@@ -16,7 +17,7 @@ docker build . -t ku:1.0
 * Running the image
 ```bash
 # docker run -p <host_port>:<container_port> -d <name>:<tag>
-docker run -p 8000:80 -d ku:1.0
+docker run -p 80:80 -d ku:1.0
 ```
 
 * Publishing the docker image
