@@ -40,7 +40,7 @@ A pod is the smallest execution unit in Kubernetes. A pod encapsulates one or mo
 * Creating pod
 ```bash
 # kubectl create -f <pod_definition_file>
-kubectl create -f pod.ymp
+kubectl create -f pod.yml
 ```
 
 * List all pods
@@ -51,7 +51,7 @@ kubectl get pods
 * Deleting pod
 ```bash
 # kubectl delete pod <name>
-kubectl delete pod ku-pod
+kubectl delete pod ku
 ```
 
 # Service (NodePort)
