@@ -71,6 +71,8 @@ kubectl delete pod ku
 
 # Service (NodePort)
 
+A NodePort service is the most primitive way to get external traffic directly to your service
+
 ![service](./images/service.svg)
 
 * Creating service
