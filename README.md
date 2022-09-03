@@ -1,12 +1,21 @@
-# Introduction to Kubernetes
+# Introduction to Kubernetess
 
 * Containerizing (Docker)
-* Pods
-* Service
-* ReplicaSet
-* Deployment
+* Kubernetes
+    * Pods
+    * Service (NodePort)
+    * ReplicaSet
+    * Deployment
 
 # Containerizing the application
+
+The purpose of containerization is to provide a secure, reliable, and lightweight runtime environment for applications that is consistent from host to host.
+
+## Traditional approach
+![traditional approach of deployment](./images/traditional_approach_of_deployment.svg)
+
+## Containerized approach
+![containerized approach of deployment](./images/containerized_approach_of_deployment.svg)
 
 * Creating the image
 ```bash
@@ -31,11 +40,17 @@ docker login
 docker push s1n7ax/ku:1.0
 ```
 
+# Kubernetes
+
+Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management.
+
+![kubernetes](./images/kubernetes.svg)
+
 # Pods
 
 A pod is the smallest execution unit in Kubernetes. A pod encapsulates one or more applications.
 
-![pod](./images/pod.svg)
+![pod](./images/pods.svg)
 
 * Creating pod
 ```bash
