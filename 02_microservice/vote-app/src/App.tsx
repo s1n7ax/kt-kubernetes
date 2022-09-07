@@ -6,7 +6,7 @@ const host = process.env.REACT_APP_VOTE_MS_HOST
 const port = process.env.REACT_APP_VOTE_MS_PORT
 
 const getHost = () => {
-  return `http://${host}:${port}`
+  return `${host}:${port}`
 }
 
 const fetchAnimals = async () => {

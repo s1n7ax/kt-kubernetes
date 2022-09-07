@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db
+  labels:
+    type: db
+spec:
+  containers:
+  - name: db
+    image: s1n7ax/db:2.1
+    ports:
+    - containerPort: 3306
+    env:
+      - name: MARIADB_USER
+        value: s1n7ax 
+      - name: MARIADB_PASSWORD
+        value: pass 
+      - name: MARIADB_ROOT_PASSWORD
+        value: rootpass 

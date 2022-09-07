@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app
+  labels:
+    type: result-app
+spec:
+  containers:
+  - name: result-app
+    image: s1n7ax/result-app:2.1
+    ports:
+    - containerPort: 3001

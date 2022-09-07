@@ -2,6 +2,7 @@ version: "3.9"
 services:
   db:
     build: ./db/
+    image: s1n7ax/db:2.1
     ports:
       - 3306:3306
     environment:
@@ -11,6 +12,7 @@ services:
 
   vote-ms:
     build: ./vote-ms/
+    image: s1n7ax/vote-ms:2.1
     ports:
       - 8000:8000
     environment:
@@ -18,6 +20,7 @@ services:
 
   result-ms:
     build: ./result-ms/
+    image: s1n7ax/result-ms:2.1
     ports:
       - 8001:8001
     environment:
@@ -27,15 +30,17 @@ services:
     build:
       context: ./vote-app/
       args:
-        - REACT_APP_VOTE_MS_HOST=localhost
-        - REACT_APP_VOTE_MS_PORT=8000
+        - REACT_APP_VOTE_MS_HOST=http://192.168.59.101 
+        - REACT_APP_VOTE_MS_PORT=30000
+    image: s1n7ax/vote-app:2.1
     ports:
       - 3000:3000
   result-app:
     build:
       context: ./result-app/
       args:
-        - REACT_APP_VOTE_MS_HOST=localhost
-        - REACT_APP_VOTE_MS_PORT=8001
+        - REACT_APP_VOTE_MS_HOST=http://192.168.59.101 
+        - REACT_APP_VOTE_MS_PORT=30001
+    image: s1n7ax/result-app:2.1
     ports:
       - 3001:3001

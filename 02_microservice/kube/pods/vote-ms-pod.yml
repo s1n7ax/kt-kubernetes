@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vote-ms
+  labels:
+    type: vote-ms
+spec:
+  containers:
+  - name: vote-ms
+    image: s1n7ax/vote-ms:2.1
+    ports:
+    - containerPort: 8000
+    env:
+      - name: DB_HOST
+        value: db
