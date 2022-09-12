@@ -1,8 +1,8 @@
 import "./App.css";
 import { useQuery } from "@tanstack/react-query";
 
-const host = process.env.REACT_APP_VOTE_MS_HOST
-const port = process.env.REACT_APP_VOTE_MS_PORT
+const host = process.env.REACT_APP_RESULT_MS_HOST
+const port = process.env.REACT_APP_RESULT_MS_PORT
 
 const getHost = () => {
   return `${host}:${port}`

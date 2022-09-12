@@ -39,8 +39,8 @@ services:
     build:
       context: ./result-app/
       args:
-        - REACT_APP_VOTE_MS_HOST=http://localhost
-        - REACT_APP_VOTE_MS_PORT=8001
+        - REACT_APP_RESULT_MS_HOST=http://localhost
+        - REACT_APP_RESULT_MS_PORT=8001
     image: s1n7ax/result-app:1.0
     ports:
       - 3001:3001
