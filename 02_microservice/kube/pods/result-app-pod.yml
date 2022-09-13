@@ -7,6 +7,7 @@ metadata:
 spec:
   containers:
   - name: result-app
-    image: s1n7ax/result-app:2.1
+    image: s1n7ax/result-app:latest
     ports:
     - containerPort: 3001
+    imagePullPolicy: Always

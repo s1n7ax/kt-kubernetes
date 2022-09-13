@@ -1,3 +1,3 @@
 #!/bin/env sh
 
-docker build . -t result-app:1.0
+docker build . -t result-app:latest

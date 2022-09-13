@@ -5,4 +5,4 @@ docker run \
 -p 3001:3001 \
 --name result-app \
 --network host \
-result-app:1.0
+result-app:latest

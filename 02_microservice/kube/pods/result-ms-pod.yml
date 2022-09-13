@@ -7,9 +7,10 @@ metadata:
 spec:
   containers:
   - name: result-ms
-    image: s1n7ax/result-ms:2.1
+    image: s1n7ax/result-ms:latest
     ports:
     - containerPort: 8001
     env:
       - name: DB_HOST
         value: db
+    imagePullPolicy: Always

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vote-ms
+  name: vote-ms-service
   labels:
     type: vote-ms-service
 spec:

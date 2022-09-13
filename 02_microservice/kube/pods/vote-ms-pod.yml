@@ -7,9 +7,10 @@ metadata:
 spec:
   containers:
   - name: vote-ms
-    image: s1n7ax/vote-ms:2.1
+    image: s1n7ax/vote-ms:latest
     ports:
     - containerPort: 8000
     env:
       - name: DB_HOST
         value: db
+    imagePullPolicy: Always

@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: db
-    image: s1n7ax/db:2.1
+    image: s1n7ax/db:latest
     ports:
     - containerPort: 3306
     env:
@@ -17,3 +17,4 @@ spec:
         value: pass 
       - name: MARIADB_ROOT_PASSWORD
         value: rootpass 
+    imagePullPolicy: Always
