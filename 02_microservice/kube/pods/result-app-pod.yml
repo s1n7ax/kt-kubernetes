@@ -10,4 +10,3 @@ spec:
     image: s1n7ax/result-app:latest
     ports:
     - containerPort: 3001
-    imagePullPolicy: Always

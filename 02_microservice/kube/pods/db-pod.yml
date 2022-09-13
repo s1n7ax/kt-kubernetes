@@ -17,4 +17,3 @@ spec:
         value: pass 
       - name: MARIADB_ROOT_PASSWORD
         value: rootpass 
-    imagePullPolicy: Always
